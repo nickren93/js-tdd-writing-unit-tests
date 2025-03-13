@@ -18,7 +18,7 @@ export function pointsForWord(word) {
     //below are after refactor:
     let points = 0;
     for (const char of word) {
-        points += /[aeiou]/.test(char) ? 1 : 2;
+        points += /[aeiou]/i.test(char) ? 1 : 2;
     }
     return points;
   }
